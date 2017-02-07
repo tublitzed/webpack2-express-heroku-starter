@@ -1,0 +1,34 @@
+{
+  "name": "webpack2-express-heroku-starter",
+  "version": "0.1.0",
+  "description": "Starter webpack 2/express app",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tublitzed/webpack2-express-heroku-starter.git"
+  },
+  "author": "Rachel Tublitz",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-middleware": "^1.10.0",
+    "webpack-hot-middleware": "^2.16.1",
+    "html-webpack-plugin": "^2.28.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-latest": "^6.22.0",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.9.0"
+  },
+  "scripts": {
+    "build:dev": "webpack --config ./config/webpack.config.js --env=dev --progress --profile --colors",
+    "build:prod": "webpack --config ./config/webpack.config.js --env=prod --progress --profile --colors",
+    "lint": "eslint .",
+    "postinstall": "npm run build:prod",
+    "start": "node server"
+  }
+}
