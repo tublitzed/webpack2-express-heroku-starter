@@ -15,13 +15,13 @@ This is a very basic sample app to get you started using [Webpack 2](https://web
 First, you'll need a heroku account.
 
 - In Heroku, create a new app.
-- Add a new builpack, select `node`. This should set you up to automatically run `npm install` which is what you'll need to get up and running.
+- Add a new builpack, select `heroku/nodejs`. This should set you up to automatically run `npm install` which is what you'll need to get up and running.
 - Follow the instructions to [link to your repository](https://devcenter.heroku.com/articles/git).
-- `git push heroku master` - Assuming you've set everything up correctly, this will deploy your app, and run the `postinstall` npm script in `package.json`.
+- `git push heroku master` - Assuming you've set everything up correctly, this will deploy your app, and run the postinstall script in `package.json`.
 
 ## Credits
 
-Thanks to @christianalfoni for the excellent [Webpack 1 tutorial and example repo](https://github.com/christianalfoni/webpack-express-boilerplate). I got started there and then built this one once I realized I wanted to play with Webpack v2.
+Thanks to [christianalfoni](https://github.com/christianalfoni) for the excellent [Webpack 1 tutorial and example repo](https://github.com/christianalfoni/webpack-express-boilerplate). I got started there and then built this one once I realized I wanted to play with Webpack v2.
 
 ## Notes
 
