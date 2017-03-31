@@ -1,2 +1,3 @@
-// eslint-disable-next-line no-console
-console.log('Tada! It works. Now build something awesome.');
+import './styles/base.scss';
+
+console.info('Tada! It works. Now build something awesome.');

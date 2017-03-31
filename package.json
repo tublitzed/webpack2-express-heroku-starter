@@ -9,11 +9,14 @@
   "author": "Rachel Tublitz",
   "license": "MIT",
   "dependencies": {
+    "css-loader": "^0.28.0",
     "express": "^4.14.1",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.2",
+    "style-loader": "^0.16.1",
     "webpack": "^2.2.1",
     "webpack-dev-middleware": "^1.10.0",
-    "webpack-hot-middleware": "^2.16.1",
-    "html-webpack-plugin": "^2.28.0"
+    "webpack-hot-middleware": "^2.16.1"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",
@@ -25,10 +28,10 @@
     "eslint-plugin-react": "^6.9.0"
   },
   "scripts": {
-    "build:dev": "webpack --config ./config/webpack.config.js --env=dev --progress --profile --colors",
-    "build:prod": "webpack --config ./config/webpack.config.js --env=prod --progress --profile --colors",
-    "lint": "eslint .",
-    "postinstall": "npm run build:prod",
+    "build:development": "webpack --config ./config/webpack.config.js --env=development --progress --profile --colors",
+    "build:production": "webpack --config ./config/webpack-production.config.js --env=production --progress --profile --colors",
+    "lint": "eslint ./{server,app,config}/**/*{config,''}.js",
+    "postinstall": "npm run build:production",
     "start": "node server"
   }
 }
