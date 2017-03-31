@@ -2,8 +2,12 @@
 
 This is a very basic sample app to get you started using [Webpack 2](https://webpack.js.org/), [Express](http://expressjs.com/) and is setup to deploy to [Heroku](https://www.heroku.com/).
 
-- It **does not** use React, Angular, or any other front-end framework. Pick your own when you're ready.
-- It **does** use [HMR](https://webpack.js.org/concepts/hot-module-replacement/). Cause this is magical.
+Features:
+
+* [HMR](https://webpack.js.org/concepts/hot-module-replacement/)
+* [SASS](http://sass-lang.com/)
+
+Note: this **does not** use React, Angular, or any other front-end framework. Pick your own when you're ready.
 
 ## Setup
 
