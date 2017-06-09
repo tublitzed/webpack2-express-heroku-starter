@@ -37,16 +37,16 @@ module.exports = {
         'style-loader', {
           loader: 'css-loader',
           options: {
-            sourceMap: true
-          }
+            sourceMap: true,
+          },
         }, {
           loader: 'sass-loader',
           options: {
             sourceMap: true,
-            includePaths: [path.join(__dirname, '/../app/src/styles/')]
-          }
-        }
-      ]
+            includePaths: [path.join(__dirname, '/../app/src/styles/')],
+          },
+        },
+      ],
     }],
   },
 };
